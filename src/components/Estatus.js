@@ -12,8 +12,8 @@ export default function Estatus({total}) {
   
   return (
     <header>
-        <h1>Carrito de compras</h1>
-        <p>cantidad de productos: <span>{total}</span></p>
+        <h1>Estatus de Posteos</h1>
+        <p>Likes totales: <span>{total}</span></p>
     </header>
   )
 }
