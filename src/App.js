@@ -14,7 +14,6 @@ function App() {
 
   const aumentar = () => {
     setTotal((actual) => actual + 1)
-    console.log(`El posteo sumó un like"`);
   }
 
   return (

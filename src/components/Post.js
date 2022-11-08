@@ -19,14 +19,15 @@ export default function Post({noticias, aumentar}) {
   const sumarLikes = () => {
     setLike(like + 1)
     aumentar()
+    console.log(`Sumo 1 like: ${noticias.texto}`)
   }
 
   return (
     <div className='posteo'>
       <h3>{noticias.titulo}</h3>
       <p>{noticias.texto}</p>
-      <button  onClick={sumarLikes}>Sumar Like</button>
-      <h5>Likes: {like < 10 ? like : <span>Más de 10 likes</span>} </h5>
+      <button  onClick={sumarLikes}>👍</button>
+      <h5>Likes: {like < 10 ? like : <span>Más de 10 👍</span>} </h5>
     </div>
   )
 }
